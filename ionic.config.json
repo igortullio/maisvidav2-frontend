@@ -1,0 +1,7 @@
+{
+  "name": "maisvidav2-frontend",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

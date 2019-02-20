@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Job/Visualizar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let job of jobs">
+
+    <ion-card-header class="item-">
+      <h2>Name: {{job.name}}</h2>
+      <h3>Id: {{job.id}}</h3>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h3>Active: {{job.active}}</h3>
+
+      <h3>ParentJob: </h3>
+      <ion-item *ngIf="job.parentJob != null">
+        <h4>Name: {{job.parentJob.name}}</h4>
+        <h4>Id: {{job.parentJob.id}}</h4>
+        <h4>Active: {{job.parentJob.active}}</h4>
+      </ion-item>
+
+      <h3>Tasks: </h3>
+      <ion-item *ngIf="job.tasks != null">
+        <ion-item *ngFor="let task of job.tasks">
+          <h4>Name: {{task.name}}</h4>
+          <h4>Id: {{task.id}}</h4>
+          <h4>Weight: {{task.weight}}</h4>
+          <h4>Completed: {{task.completed}}</h4>
+          <h4>CreatedAt: {{task.createdAt}}</h4>
+        </ion-item>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

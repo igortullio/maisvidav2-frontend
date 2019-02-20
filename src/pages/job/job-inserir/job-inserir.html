@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>job/inserir</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input placeholder="Name" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Active</ion-label>
+    <ion-toggle checked [(ngModel)]="active"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>ParentJob</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Tasks</ion-label>
+  </ion-item>
+  <button class="button-inner" ion-button secondary menuToggle (click)="salvar()">Salvar</button>
+</ion-content>

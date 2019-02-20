@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>task/excluir</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Qual o id da task?</h2>
+  <ion-input type="number" placeholder="Id da task" [(ngModel)]="id"></ion-input>
+  <button class="button-inner" ion-button secondary menuToggle (click)="excluir()">Excluir</button>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>task/inserir</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input placeholder="Name" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Weight</ion-label>
+    <ion-input placeholder="Weight" type="number" [(ngModel)]="weight"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Completed</ion-label>
+    <ion-toggle checked [(ngModel)]="completed"></ion-toggle>
+  </ion-item>
+  <button class="button-inner" ion-button secondary menuToggle (click)="salvar()">Salvar</button>
+</ion-content>
