@@ -22,4 +22,15 @@ export class JobService {
     return this.http.delete(`${API_CONFIG.baseUrl}/job/${id}`);
   }
 
+  insert(obj: Job) {
+    return this.http.post(
+      `${API_CONFIG.baseUrl}/job/`,
+      obj,
+      {
+        observe: 'response',
+        responseType: 'text'
+      }
+    );
+  }
+
 }

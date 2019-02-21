@@ -8,7 +8,9 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Qual o id da task?</h2>
-  <ion-input type="number" placeholder="Id da task" [(ngModel)]="id"></ion-input>
+  <ion-item>
+    <ion-label>Qual o id da task?</ion-label>
+    <ion-input type="number" placeholder="Id" [(ngModel)]="id"></ion-input>
+  </ion-item>
   <button class="button-inner" ion-button secondary menuToggle (click)="excluir()">Excluir</button>
 </ion-content>

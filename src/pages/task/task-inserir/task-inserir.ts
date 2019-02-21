@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
 import {TaskService} from "../../../services/domain/task.service";
-import {Task, TaskImpl} from "../../../models/task";
+import {TaskImpl} from "../../../models/task";
 
 @IonicPage()
 @Component({

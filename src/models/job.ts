@@ -15,9 +15,9 @@ export class JobImpl implements Job {
   parentJob: Job;
   tasks: Task[];
 
-  constructor(active: boolean, name: string) {
-    this.active = active;
+  constructor(name: string, active: boolean) {
     this.name = name;
+    this.active = active;
   }
 
 }
